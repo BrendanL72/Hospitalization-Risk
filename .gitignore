@@ -6,12 +6,7 @@ __pycache__/
 # C extensions
 *.so
 
-#OCSVM
-*.model
-freq_test
-freq_train
-test_output
-train_output
+
 
 # Distribution / packaging
 .Python
