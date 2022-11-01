@@ -1,0 +1,5 @@
+#remove data, models, and output
+*.model
+data/freq_test
+data/freq_train
+output/
