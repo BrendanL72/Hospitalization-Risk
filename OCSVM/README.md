@@ -7,10 +7,11 @@ Probabilities are desired to determine which patients have a higher risk of hosp
 This currently only runs on Linux devices.
 
 ## Dependencies
-* Python's LibSVM
+* LibSVM - Python
 
 ## How to Run
 While in the directory this README is housed in:
+1. Create an output folder using `mkdir output`
 1. Run format_csv.py using `python3 ./src/format_csv.py`
 2. Run run_svm.sh to create the OCSVM model
 3. Run a python script to get predicted probabilities
@@ -19,7 +20,7 @@ While in the directory this README is housed in:
 
 TO BE IMPLEMENTED:
 
-Run the commands as listed in the jupyter notebook. It should compile the C source code, run the 
+Run the commands as listed in the jupyter notebook. It should compile the C source code, and then have the ability to run these scripts sequentially
 
 ## Structure
 
