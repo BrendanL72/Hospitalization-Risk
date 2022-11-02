@@ -1,15 +1,24 @@
 #This script changes a csv formatted file into the style desired by LibSVM
 
+#LibSVM format is:
+#  <label> 1:<value1> 2:<value2> ... n:<valuen>
+#  <label> 1:<value1> ...
+#  ...
+#  <label> ...
+
 import csv
 from pathlib import Path
 import random
 
-data_path = "./data"
+
+data_path = "../data"
+output_path = "./output"
+
 csv_name = 'frequencies.csv'
 csv_path = Path(data_path, csv_name)
 
-train_file_name = Path(csv_path.parent, "freq_train") 
-test_file_name = Path(csv_path.parent, "freq_test") 
+train_file_name = Path(output_path, "freq_train") 
+test_file_name = Path(output_path, "freq_test") 
 
 test_train_split = 0.8
 testset_slice = 0.1
@@ -22,9 +31,9 @@ with open(csv_path) as csv_file:
    next(csv_handle)
    for row in csv_handle:
       if row[-1] == 0:
-            row_string = "1"
+            row_string = "-1"
       else:
-         row_string = "-1"
+         row_string = "1"
       for count, value in enumerate(row[:-1]):
          row_string += f" {count}:{value}"
       row_string += "\n"
