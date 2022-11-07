@@ -8,11 +8,12 @@ This currently only runs on Linux devices.
 
 ## Dependencies
 * LibSVM - Python
+* SciKitLearn
+* Pandas
 
 ## How to Run
 While in the directory this README is housed in:
-1. Create an output folder using `mkdir output`
-1. Run format_csv.py using `python3 ./src/format_csv.py`
+1. Run data_prep.py using `python3 ./src/data_prep .py`
 2. Run run_svm.sh to create the OCSVM model
 3. Run a python script to get predicted probabilities
 4. Run another python script to get obtain performance metrics
@@ -26,7 +27,7 @@ Run the commands as listed in the jupyter notebook. It should compile the C sour
 
 script
 
-This folder contains scripts to predict probability and perform metrics and probabilities.
+This folder contains scripts to predict probability, perform metrics, and visualizations.
 
 src
 
