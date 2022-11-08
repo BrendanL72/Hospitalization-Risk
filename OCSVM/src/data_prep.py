@@ -62,7 +62,7 @@ x = df.drop(['hasHospitilization'], axis=1)
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size = 0.2)
 
 #make dataset smaller
-scale_factor = 0.5
+scale_factor = 1
 x_train = x_train.iloc[0:math.floor(x_train.shape[0]*scale_factor),:]
 x_test = x_test.iloc[0:math.floor(x_test.shape[0]*scale_factor),:]
 y_train = y_train.iloc[0:math.floor(y_train.shape[0]*scale_factor)]

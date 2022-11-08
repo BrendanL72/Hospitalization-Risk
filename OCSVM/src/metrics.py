@@ -1,4 +1,15 @@
-#This script provides anomaly detection metrics (precision, recall, F1 score) to determine how good the OCSVM performed
+#  This script provides anomaly detection metrics (precision, recall, F1 score) to determine how good the OCSVM performed
+#  Inputs:
+#     File containing Test Predictions
+#     File containing True Test Positives
+#     
+#  Outputs:
+#     Console:
+#        Count and Percentage of Predicted and True Positives
+#        Anomaly Detection Metrics (Precision, Recall, F1 Score)
+
+# TODO:
+#  Rename variables to be generalized (e.g. preds instead of )
 
 from pathlib import Path
 import numpy as np
