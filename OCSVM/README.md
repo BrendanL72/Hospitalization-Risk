@@ -40,3 +40,5 @@ Contains any files created through running the script. Contains training and tes
 ## Bibliography
 
 Z. Que and C.-J. Lin. "One-class SVM probabilistic outputs." Technical report, 2022.
+
+Chih-Chung Chang and Chih-Jen Lin, LIBSVM : a library for support vector machines. ACM Transactions on Intelligent Systems and Technology, 2:27:1--27:27, 2011.

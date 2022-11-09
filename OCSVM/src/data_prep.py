@@ -83,6 +83,3 @@ except OSError:
 write_libsvm_file(train_file_name, x_train, y_train)
 write_libsvm_file(test_file_name, x_test, y_test)
 
-#output true values for future use in metrics
-true_test_values_file = Path(output_path, "true_test_values")
-np.savetxt(true_test_values_file, y_test, "%u")
