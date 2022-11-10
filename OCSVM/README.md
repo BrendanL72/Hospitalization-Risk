@@ -5,7 +5,7 @@ A One-Class SVM (OCSVM) is an anomaly detection model based on Support Vector Ma
 Probabilities are desired to determine which patients have a higher risk of hospitalization.
 
 ## Dependencies
-* LibSVM - Python
+* LibSVM - Python (install using `pip3 install libsvm-official`)
 * SciKitLearn
 * Pandas
 

@@ -22,13 +22,15 @@ test_path = Path(output_folder, testing_data)
 y_train, x_train = svm_read_problem(train_path)
 y_test, x_test = svm_read_problem(test_path)
 
+print(type(y_train), type(x_train))
+
 train_prob = svm_problem(y_train,x_train)
 test_prob = svm_problem(y_test,x_test)
 
 #params:
 #  -s 2: Choose OCSVM model
 #  -b 1: Choose to predict probability
-#  -n:   nu hyperparameter, upper limit of incorrect labels
+#  -n:   nu hyperparameter, upper limit of incorrect labels, lower means less tolerance
 #  -g:   gamma hyperparameter, determines similarity required to be in same class, higher means more curvature
 #  -h:   Use shrinking heuristic or not
 params = svm_parameter('-s 2 -b 1 -n 0.01 -g 0.0001 -h 0')
@@ -36,8 +38,8 @@ params = svm_parameter('-s 2 -b 1 -n 0.01 -g 0.0001 -h 0')
 #train and save model
 model = svm_train(train_prob, params)
 
-
 p_labels, p_acc, p_vals = svm_predict(y_test, x_test, model, '-b 1')
+
 # for test_i in x_test:
 #    test, max_idx = gen_svm_nodearray(test_i)
 #    print(libsvm.svm_predict(model, test,"-b 1"))
