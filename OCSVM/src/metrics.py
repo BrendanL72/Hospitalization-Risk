@@ -5,7 +5,7 @@
 #     
 #  Outputs:
 #     Console:
-#        Count and Percentage of Predicted and True Positives
+#         Predicted and True Positives (Count and Percentage)
 #        Anomaly Detection Metrics (Precision, Recall, F1 Score)
 
 # TODO:
