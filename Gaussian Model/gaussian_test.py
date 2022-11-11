@@ -17,7 +17,7 @@ contam = len(data[data['hasHospitilization']  == -1])/len(data)
 data_train = np.array(data.iloc[:, 1:-1].values)
 
 #Loading previously trained model
-cov = load('adl_gaussian_model_assume_centered.joblib')
+cov = load('adl_gaussian_model_high_contamination_assume_centered.joblib')
 
 #Classify data into outliers and normals.
 y_pred = cov.predict(data_train)
