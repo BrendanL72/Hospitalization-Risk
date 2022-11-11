@@ -11,7 +11,7 @@ For each model type, navigate to the respective folders and run the code inside 
 
 ## Project Structure
 
-* Gaussian: Contains all scripts to run a Univariate Gaussian model
+* Gaussian Model: Contains all scripts to run a Univariate Gaussian model
 * OCSVM: Contains scripts to run a One-Class SVM and find optimal hyperparameters
 * Data: Contains data used for the anomaly detection models, including de-indentified client appointments and the frequency of each ADL.
 * CreateAppointments.py: This script generates `Appointments.csv` from the ADLs and CRFs, as well as provides visualizations like correlation matrices
