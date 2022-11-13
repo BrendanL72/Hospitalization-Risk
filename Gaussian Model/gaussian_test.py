@@ -1,8 +1,19 @@
+'''
+Author: Dhruva Mambapoor
+
+This model will take a joblib file and a CSV as input and outputs performance metrics on predicting the data-set provided.
+Note on CSV: 
+1. Must be named `frequencies.csv`.
+2. First row and column are ignored; treated as header row and index column respectively;
+3. Must have the same amount of columns and data as training set.
+
+To train the model, run `gaussian_train.py` first.
+'''
+
 import pandas as pd
 import numpy as np
 from joblib import load
 from sklearn.covariance import EllipticEnvelope
-
 
 
 #Reading and formatting data
@@ -17,7 +28,7 @@ contam = len(data[data['hasHospitilization']  == -1])/len(data)
 data_train = np.array(data.iloc[:, 1:-1].values)
 
 #Loading previously trained model
-cov = load('adl_gaussian_model_assume_centered.joblib')
+cov = load('adl_gaussian_model_high_contamination_assume_centered.joblib')
 
 #Classify data into outliers and normals.
 y_pred = cov.predict(data_train)
