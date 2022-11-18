@@ -1,13 +1,17 @@
 # Hospitalization-Risk
 TrenData Analytics Team Project
 
-This project is aimed at using several anomaly detection methods to determine the likelihood of an elderly client becoming hospitalized. We used Client Review Forms (CRFs) and Activities of Daily Living Forms (ADLs) to comprise our dataset, which are commmonly used for keeping track of and ensuring elderly care.
+This project is aimed at using several anomaly detection methods to determine the likelihood of an elderly client becoming hospitalized. We used Client Review Forms (CRFs) and Activities of Daily Living Forms (ADLs) to comprise our dataset, which are commonly used for keeping track of and ensuring elderly care.
 
 Created as part of the UTD Senior Capstone Project elective.
 
 ## How to Use
 
-For each model type, navigate to the respective folders and run the code inside according to the README.
+For each model type, navigate to the respective folders and run the code inside according to the README. 
+
+NOTE: Some notebooks/scripts require the use of `FrequenciesExtra.csv`. However the file cannot be stored on Github as it is >100MB. As such, follow the link below to download it and insert it into the ./data folder.
+
+https://drive.google.com/file/d/1V58RWwR3rDc8RZGOe5pRNs77AKNd1L3o/view
 
 ## Project Structure
 
