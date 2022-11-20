@@ -36,11 +36,14 @@ train_prob = svm_problem(y_train,x_train)
 #params:
 #  -s:   Choose OCSVM model. 2 means One Class SVM
 #  -b:   Choose to predict probability. 1 means predict probability
-#  -t:   Chooses kernel type (linear, poly, radial, sigmoid, and precomputed kernel respectively)
+#  -d:   Degree of polynomial
+#  -t:   Chooses kernel type (linear, poly, radial, sigmoid, and precomputed kernel)
 #  -n:   nu hyperparameter, upper limit of incorrect labels, lower means less tolerance
 #  -g:   gamma hyperparameter, determines similarity required to be in same class, higher means more curvature
 #  -h:   Use shrinking heuristic or not
-params = svm_parameter('-s 2 -b 1 -t 1 -n 0.001 -g 0.1 -h 0')
+#  -wN:  Adds penalty weighting to the Nth classification class, starting at 0
+#  -q:   quiet mode
+params = svm_parameter('-s 2 -b 1 -d 5 -t 1 -h 0 -n 0.01 -g 0.025 -w1 200 -q')
 
 #train and save model
 model = svm_train(train_prob, params)
