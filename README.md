@@ -34,7 +34,7 @@ Pramod Vivek
 
 ## Credits
 
-Dr. Chen for technical advice
+Dr. Chen and Wang Haoliang for technical advice, direction, and oversight
 
 TrenData and Chris Simonds for project management
 
