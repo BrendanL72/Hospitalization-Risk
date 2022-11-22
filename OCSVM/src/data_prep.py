@@ -22,7 +22,7 @@ from pathlib import Path
 import pandas as pd
 import numpy as np
 import math
-from sklearn.preprocessing import MinMaxScaler
+from sklearn.preprocessing import MinMaxScaler, StandardScaler
 from sklearn.model_selection import train_test_split
 
 #write_libsvm_file takes input and outcome data and writes it into Pandas to_string format
@@ -69,7 +69,9 @@ y_train = y_train.iloc[0:math.floor(y_train.shape[0]*scale_factor)]
 y_test = y_test.iloc[0:math.floor(y_test.shape[0]*scale_factor)]
 
 #scale data from 0 to 1 to avoid domination of one factor
-scaler = MinMaxScaler(copy = False)
+#medical data should usually follow a normal distribution
+#scaler = MinMaxScaler(copy = False)
+scaler = StandardScaler(copy = False)
 scaler.fit_transform(x_train)
 scaler.transform(x_test)
 

@@ -31,6 +31,9 @@ test_output_path = Path(output_path , test_data_file_name)
 pred_outcomes = np.loadtxt(gamma_preds_path) < 0
 actual_outcomes = np.loadtxt(test_output_path) < 0
 
+print(pred_outcomes)
+print(actual_outcomes)
+
 #numpy wizardy lets you find number of bools based on sum of bools
 num_gauss_preds = pred_outcomes.sum()
 real_positives = actual_outcomes.sum()
