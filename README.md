@@ -38,5 +38,5 @@ Dr. Chen and Wang Haoliang for technical advice, direction, and oversight
 
 TrenData and Chris Simonds for project management
 
-Outreach Health for providing the data necessary for this project
+Outreach Health for providing the data necessary for this project and providing the background information necessary to develop this project
 
