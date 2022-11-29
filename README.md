@@ -17,6 +17,7 @@ https://drive.google.com/file/d/1V58RWwR3rDc8RZGOe5pRNs77AKNd1L3o/view
 
 * Gaussian Model: Contains all scripts to run a Univariate Gaussian model
 * OCSVM: Contains scripts to run a One-Class SVM and find optimal hyperparameters
+* KNN: Contains scripts to run a k-Nearest Neighbors and find optimal hyperparameters
 * Data: Contains data used for the anomaly detection models, including de-indentified client appointments and the frequency of each ADL.
 * CreateAppointments.py: This script generates `Appointments.csv` from the ADLs and CRFs, as well as provides visualizations like correlation matrices
 * CreateFrequencies.py: This script generates `Frequencies.csv` from the ADLs and CRFs, as well as provides visualizations like correlation matrices
