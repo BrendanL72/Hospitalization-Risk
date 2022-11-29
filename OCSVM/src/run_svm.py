@@ -41,9 +41,8 @@ train_prob = svm_problem(y_train,x_train)
 #  -n:   nu hyperparameter, upper limit of incorrect labels, lower means less tolerance
 #  -g:   gamma hyperparameter, determines similarity required to be in same class, higher means more curvature
 #  -h:   Use shrinking heuristic or not
-#  -wN:  Adds penalty weighting to the Nth classification class, starting at 0
-#  -q:   quiet mode
-params = svm_parameter('-s 2 -b 1 -d 5 -t 1 -h 0 -n 0.01 -g 0.025 -w1 200 -q')
+#  -q:   quiet mode, doesn't seem to do anything
+params = svm_parameter('-s 2 -b 1 -d 5 -t 1 -h 0 -n 0.5 -g 0.025 -q')
 
 #train and save model
 model = svm_train(train_prob, params)
