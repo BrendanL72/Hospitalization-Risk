@@ -6,8 +6,7 @@ Probabilities are desired to determine which patients have a higher risk of hosp
 
 ## Dependencies
 * LibSVM - Python (install using `pip3 install libsvm-official`)
-* SciKitLearn
-* Pandas
+* SciKit-Learn v1.1.3
 
 ## How to Run
 While in the directory this README is housed in, run `python3 allFile.py`, which runs all three of the following files in order 
