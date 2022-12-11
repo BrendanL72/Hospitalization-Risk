@@ -9,10 +9,6 @@ Created as part of the UTD Senior Capstone Project elective.
 
 For each model type, navigate to the respective folders and run the code inside according to the README. 
 
-NOTE: Some notebooks/scripts require the use of `FrequenciesExtra.csv`. However the file cannot be stored on Github as it is >100MB. As such, follow the link below to download it and insert it into the ./data folder.
-
-https://drive.google.com/file/d/1V58RWwR3rDc8RZGOe5pRNs77AKNd1L3o/view
-
 ## Project Structure
 
 * Gaussian Model: Contains all scripts to run a Univariate Gaussian model
@@ -21,6 +17,14 @@ https://drive.google.com/file/d/1V58RWwR3rDc8RZGOe5pRNs77AKNd1L3o/view
 * Data: Contains data used for the anomaly detection models, including de-indentified client appointments and the frequency of each ADL.
 * CreateAppointments.py: This script generates `Appointments.csv` from the ADLs and CRFs, as well as provides visualizations like correlation matrices
 * CreateFrequencies.py: This script generates `Frequencies.csv` from the ADLs and CRFs, as well as provides visualizations like correlation matrices
+
+## Datasets
+
+* OutreachAdls.csv: Combined csv of all Activities of Daily Living (ADLs)
+* OutreachCrfs.csv: Combined csv of all Client Review Forms (CRFs)
+* Appointments.csv: Data after being transformed by `CreateAppointments.iypnb`. Requires `OutreachAdls.csv` and `OutreachCrfs.csv`
+* Frequencies.csv: Date after being transformed by `CreateFrequencies.ipynb`. Requires `Appointments.csv` and `OutreachCrfs.csv`
+* FrequenciesExtra.csv: Appended version of `Frequencies.csv` with header info including Client, Caregiver, and Date
 
 ## Authors
 Dhruva Mambapoor

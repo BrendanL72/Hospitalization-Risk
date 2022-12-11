@@ -1,3 +1,6 @@
+# This script is an outdated version of the combined jupyter notebooks
+#     CreateAppointments.ipynb, CreateFrequencies.ipynb
+
 import pandas as pd
 import numpy as np
 #import seaborn as sns
