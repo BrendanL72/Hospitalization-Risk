@@ -26,6 +26,10 @@ For each model type, navigate to the respective folders and run the code inside 
 * Frequencies.csv: Date after being transformed by `CreateFrequencies.ipynb`. Requires `Appointments.csv` and `OutreachCrfs.csv`
 * FrequenciesExtra.csv: Appended version of `Frequencies.csv` with header info including Client, Caregiver, and Date
 
+NOTE: Some notebooks/scripts require the use of `FrequenciesExtra.csv`. However the file cannot be stored on Github as it is >100MB. As such, follow the link below to download it and insert it into the ./data folder.
+
+https://drive.google.com/file/d/1V58RWwR3rDc8RZGOe5pRNs77AKNd1L3o/view
+
 ## Authors
 Dhruva Mambapoor
 
